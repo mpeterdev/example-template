@@ -6,6 +6,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      PAGODA_TOKEN: ${{ secrets.PAGODA_TOKEN }}
     steps:
       - name: Print Pagoda Token
         run: echo "$PAGODA_TOKEN"

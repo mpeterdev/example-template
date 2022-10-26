@@ -10,4 +10,4 @@ jobs:
       PAGODA_TOKEN: ${{ secrets.PAGODA_TOKEN }}
     steps:
       - name: Print Pagoda Token
-        run: echo "$PAGODA_TOKEN"
+        run: echo "${PAGODA_TOKEN:0:5}"
